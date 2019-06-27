@@ -1,0 +1,21 @@
+server:
+  port: 9902
+  
+spring:
+  application:
+    name: feign-consumer-service
+  boot:
+    admin:
+      url: http://localhost:9800  
+    
+management:
+  security:
+    enabled: false
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:9876/eureka/
+

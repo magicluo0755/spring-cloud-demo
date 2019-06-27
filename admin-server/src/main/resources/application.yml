@@ -1,0 +1,13 @@
+server:
+  port: 9800
+  
+spring:
+  application:
+    name: admin-server
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:9876/eureka/

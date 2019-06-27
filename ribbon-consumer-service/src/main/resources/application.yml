@@ -1,0 +1,14 @@
+server:
+  port: 9901
+  
+spring:
+  application:
+    name: ribbion-consumer-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:9876/eureka/
+
