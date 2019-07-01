@@ -1,0 +1,25 @@
+server:
+  port: 9890
+  
+spring:
+  application:
+    name: config-server
+  
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:9876/eureka/
+      
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/magicluo0755/spring-cloud-demo
+          search-paths: config-repo
+          username: username
+          password: password
+       
+
