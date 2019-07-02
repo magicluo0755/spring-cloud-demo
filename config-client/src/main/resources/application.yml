@@ -1,0 +1,23 @@
+server:
+  port: 8903
+  
+spring:
+  application:
+    name: clientService
+  cloud:
+    config:
+      uri: http://localhost:9890
+      profile: default 
+      label: master
+      
+management:
+  security:
+    enabled: false
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:9876/eureka/
+

@@ -22,6 +22,7 @@
 		<module>hello-service-v2</module>
 		<module>ribbon-consumer-service</module>
 		<module>feign-consumer-service</module>
+		<module>config-client</module>
 	</modules>
 
 	<properties>
