@@ -1,3 +1,4 @@
+#disable spring security
 management:
   security:
     enabled: false
