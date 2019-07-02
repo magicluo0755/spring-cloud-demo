@@ -4,6 +4,14 @@ server:
 spring:
   application:
     name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/magicluo0755/spring-cloud-demo
+          search-paths: config-repo
+          username: magicluo0755
+          password: luo@8438932
   
 eureka:
   client:
@@ -11,15 +19,5 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://admin:admin@localhost:9876/eureka/
-      
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/magicluo0755/spring-cloud-demo
-          search-paths: config-repo
-          username: username
-          password: password
        
 

@@ -1,15 +1,3 @@
-server:
-  port: 8903
-  
-spring:
-  application:
-    name: clientService
-  cloud:
-    config:
-      uri: http://localhost:9890
-      profile: default 
-      label: master
-      
 management:
   security:
     enabled: false
