@@ -10,8 +10,8 @@ spring:
         git:
           uri: https://github.com/magicluo0755/spring-cloud-demo
           search-paths: config-repo
-          username: magicluo0755
-          password: luo@8438932
+          username: username
+          password: password
   
 eureka:
   client:
