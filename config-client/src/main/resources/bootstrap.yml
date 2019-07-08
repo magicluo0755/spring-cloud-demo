@@ -6,6 +6,24 @@ spring:
     name: clientService
   cloud:
     config: 
-      uri: http://localhost:9890
-      profile: default 
-      label: master
+      discovery:
+        enabled: true
+        serviceId: config-server
+      profile: default
+
+#spring:
+#  application:
+#    name: clientService
+#  cloud:
+#    config: 
+#      uri: http://localhost:9890
+#      profile: default 
+#      label: master
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:9876/eureka/
